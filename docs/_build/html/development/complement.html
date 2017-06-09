@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Complementary Projects &mdash; PySD 0.3.2 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="PySD 0.3.2 documentation" href="../index.html"/>
+        <link rel="up" title="Developer Documentation" href="development_index.html"/>
+        <link rel="prev" title="Internal Functions" href="internal_functions.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-nav-search">
+        
+
+        
+          <a href="../index.html" class="icon icon-home"> PySD
+        
+
+        
+        </a>
+
+        
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+        
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        
+          
+          
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#installing-via-pip">Installing via pip</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#installing-from-source">Installing from source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#required-dependencies">Required Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#optional-dependencies">Optional Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#additional-resources">Additional Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../basic_usage.html">Basic Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../basic_usage.html#importing-a-model-and-getting-started">Importing a model and getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_usage.html#running-the-model">Running the Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_usage.html#outputting-various-run-information">Outputting various run information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_usage.html#setting-parameter-values">Setting parameter values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_usage.html#setting-simulation-initial-conditions">Setting simulation initial conditions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_usage.html#querying-current-values">Querying current values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../basic_usage.html#collecting-a-history-of-returned-values">Collecting a history of returned values</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../advanced_usage.html">Advanced Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../advanced_usage.html#replacing-model-components-with-more-complex-objects">Replacing model components with more complex objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../advanced_usage.html#supplying-additional-arguments-to-the-integrator">Supplying additional arguments to the integrator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../functions.html">User Functions Reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="development_index.html">Developer Documentation</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="about.html">About the Project</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="about.html#motivation-the-coming-of-age-of-big-data">Motivation: The (coming of) age of Big Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="about.html#general-approaches-for-integrating-system-dynamic-models-and-data-analytics">General approaches for integrating system dynamic models and data analytics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contributing.html">Contributing to PySD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#development-tools">Development Tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="contributing.html#test-suite">Test Suite</a></li>
+<li class="toctree-l4"><a class="reference internal" href="contributing.html#speed-tests">Speed Tests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="contributing.html#profiler">Profiler</a></li>
+<li class="toctree-l4"><a class="reference internal" href="contributing.html#python-linter">Python Linter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="contributing.html#pysd-design-philosophy">PySD Design Philosophy</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pathway.html">PySD Development Pathway</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pathway.html#high-priority">High Priority</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pathway.html#medium-priority">Medium Priority</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pathway.html#low-priority">Low Priority</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pathway.html#not-planned">Not Planned</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pathway.html#ideas-for-other-projects">Ideas for Other Projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pathway.html#current-features">Current Features</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structure.html">Structure of the PySD module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structure.html#translation">Translation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="vensim_translation.html">Vensim Translation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="xmile_translation.html">XMILE Translation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="structure.html#the-model-class">The model class</a></li>
+<li class="toctree-l3"><a class="reference internal" href="structure.html#the-pysd-class">The PySD class</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="internal_functions.html">Internal Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Complementary Projects</a></li>
+</ul>
+</li>
+</ul>
+
+          
+        
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">PySD</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="development_index.html">Developer Documentation</a> &raquo;</li>
+      
+    <li>Complementary Projects</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/development/complement.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document">
+            
+  <div class="section" id="complementary-projects">
+<h1>Complementary Projects<a class="headerlink" href="#complementary-projects" title="Permalink to this headline">¶</a></h1>
+<p>The most valuable component for better integrating models with <em>basically anything else</em> is a standard language for communicating the structure of those models. That language is <a class="reference external" href="http://www.iseesystems.com/community/support/XMILE.aspx">XMILE</a>. The draft specifications for this have been finalized and the standard should be approved in the next few months.</p>
+<p>A python library for analyzing system dynamics models called the <a class="reference external" href="http://simulation.tbm.tudelft.nl/ema-workbench/contents.html">Exploratory Modeling and Analysis (EMA) Workbench</a> is being developed by <a class="reference external" href="http://www.tbm.tudelft.nl/en/about-faculty/departments/multi-actor-systems/policy-analysis/people/erik-pruyt/">Erik Pruyt</a> and <a class="reference external" href="https://github.com/quaquel">Jan Kwakkel</a> at TU Delft. This package implements a variety of analysis methods that are unique to dynamic models, and could work very tightly with PySD.</p>
+<p>An excellent javascript library called <a class="reference external" href="https://github.com/bpowers/sd.js/tree/master">sd.js</a> created by Bobby Powers at <a class="reference external" href="http://sdlabs.io/">SDlabs</a> exists as a standalone SD engine, and provides a beautiful front end. This front end could be rendered as an iPython widget to facilitate display of SD models.</p>
+<p>The <a class="reference external" href="http://www.ie.boun.edu.tr/labs/sesdyn/projects/bats/index.html">Behavior Analysis and Testing Software(BATS)</a> delveloped by <a class="reference external" href="http://www.ie.boun.edu.tr/people/pages/yucel.html">Gönenç Yücel</a> includes a really neat method for categorizing behavior modes and exploring parameter space to determine the boundaries between them.</p>
+</div>
+
+
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="internal_functions.html" class="btn btn-neutral" title="Internal Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, James Houghton.
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.3.2',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
